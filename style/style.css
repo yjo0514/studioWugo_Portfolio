@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+* {
+  color: #fff;
+}
+
+div#wrapFrame {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/mainPage/6d01ae4275364.jpg);
+}
+
+div#wrap {
+  width: 1200px;
+  border: 1px solid #8f8;
+  margin: 20px auto;
+  /* background-image: url(../images/mainPage/6d01ae4275364.jpg); */
+}
+
+/* header 시작 */
+
+header#header {
+  height: 60px;
+  line-height: 55px;
+  justify-content: space-between;
+}
+
+div#headerLogo a {
+  border: 1px solid #00f;
+  display: inline-block;
+}
+
+div#gnbBtn a {
+  width: 165px;
+  border: 1px solid #00f;
+  display: inline-block;
+  color: #fff;
+}
+
+header#header div#lnb {
+  width: 165px;
+  border: 1px solid #00f;
+}
+
+header#header div#lnb ul {
+  justify-content: right;
+}
+
+header#header div#lnb a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+/* header 끝 */
+
+/* div#sideMenuArea 시작 */
+
+div#sideMenuBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* display: none; */
+}
+
+div#sideMenuArea {
+  width: 320px;
+  height: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+  padding: 80px 24px;
+  text-align: center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+div#sideMenuHeader {
+  margin-bottom: 60px;
+}
+
+nav#gnb {
+  height: 200px;
+  line-height: 35px;
+  border: 1px solid #0f0;
+}
+
+nav#gnb a {
+  color: #aaa;
+  font-size: 18px;
+}
+
+div#sideMenuArea button {
+  color: #aaa;
+  font-size: 25px;
+  border: 1px solid #000;
+  background-color: #000;
+
+  position: relative;
+  bottom: 43px;
+  left: 130px;
+  bottom: 350px;
+
+  cursor: pointer;
+}
+
+/* div#sideMenuArea 끝 */
