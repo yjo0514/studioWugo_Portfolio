@@ -1,12 +1,10 @@
 @charset "UTF-8";
 @import url(style_Reset.css);
 
-
 body {
-  background-image: 
-  url(../images/mainPage/6d01ae4275364.jpg), 
-  url(../images/mainPage/9a1fbee9b0324.jpg), 
-  url(../images/mainPage/9ad5b2a2812eb.jpg);
+  background-image: url(../images/mainPage/6d01ae4275364.jpg),
+    url(../images/mainPage/9a1fbee9b0324.jpg),
+    url(../images/mainPage/9ad5b2a2812eb.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -15,7 +13,6 @@ body {
 div#wrapFrame {
   width: 100%;
   height: 100%;
-
 
   margin: 0;
   padding: 0;
@@ -28,7 +25,7 @@ main#main{
 } */
 
 div#wrap {
-  width: 1200px;
+  width: 1250px;
   border: 1px solid #8f8;
   margin: 20px auto;
 }
@@ -63,17 +60,18 @@ div#gnbBtn a {
 }
 
 header#header div#lnb {
-  width: 165px;
+  width: 190px;
   border: 1px solid #00f;
 }
 
 header#header div#lnb ul {
   justify-content: right;
+  margin-right: 50px;
 }
 
 header#header div#lnb a {
   color: #fff;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 /* header 끝 */
@@ -118,6 +116,10 @@ nav#gnb {
 nav#gnb a {
   color: #aaa;
   font-size: 18px;
+}
+
+nav#gnb a:hover {
+  color: #fff;
 }
 
 div#sideMenuArea button {

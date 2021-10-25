@@ -1,133 +1,186 @@
 @charset "UTF-8";
 @import url(../style/style_Reset.css);
 
-body{
-    background-color: #000;
+body {
+  background-color: #000;
 }
 
 div#wrapFrame {
-    width: 100%;
-    height: 100%;
-  
-    margin: 0;
-    padding: 0;
-  }
+  width: 100%;
+  height: 100%;
 
-  main#main li, h2{
-    color: #fff;
-  }
-
-  main#main #about1{
-      height: 600px;
-  }
-
-  main#main #about2{
-    height: 700px;
+  margin: 0;
+  padding: 0;
 }
-  
-  div#wrap {
-    width: 1200px;
-    border: 1px solid #8f8;
-    margin: 20px auto;
-  }
-  
-  /* header 시작 */
-  
-  header#header {
-    height: 60px;
-    line-height: 55px;
-    justify-content: space-between;
 
-    border: 1px solid #f00;
-  }
-  
-  div#headerLogo a {
-    border: 1px solid #00f;
-    display: inline-block;
-  }
-  
-  div#gnbBtn {
-    width: 165px;
-    border: 1px solid #00f;
-    display: inline-block;
-  }
-  
-  div#gnbBtn a {
-    color: #fff;
-    font-size: 19px;
-    /* 
+main#main li,
+h2 {
+  color: #fff;
+}
+
+main#main #about1 {
+  height: 600px;
+}
+
+main#main #about2 {
+  height: 700px;
+}
+
+div#wrap {
+  width: 1250px;
+  border: 1px solid #8f8;
+  margin: 20px auto;
+}
+
+/* header 시작 */
+
+header#header {
+  height: 60px;
+  line-height: 55px;
+  justify-content: space-between;
+
+  border: 1px solid #f00;
+}
+
+div#headerLogo a {
+  border: 1px solid #00f;
+  display: inline-block;
+}
+
+div#gnbBtn {
+  width: 165px;
+  border: 1px solid #00f;
+  display: inline-block;
+}
+
+div#gnbBtn a {
+  color: #fff;
+  font-size: 19px;
+  /* 
     position: relative;
     z-index: 10; */
-  }
-  
-  header#header div#lnb {
-    width: 165px;
-    border: 1px solid #00f;
-  }
-  
-  header#header div#lnb ul {
-    justify-content: right;
-  }
-  
-  header#header div#lnb a {
-    color: #fff;
-    margin-right: 20px;
-  }
-  
-  /* header 끝 */
-  
-  /* div#sideMenuArea 시작 */
-  
-  div#sideMenuBG {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  
-    position: fixed;
-    left: 0;
-    top: 0;
-  
-    display: none;
-  }
-  
-  div#sideMenuArea {
-    width: 320px;
-    height: 100%;
-    background-color: #000;
-    border: 1px solid #f00;
-    padding: 80px 24px;
-    text-align: center;
-  
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-  
-  div#sideMenuHeader {
-    margin-bottom: 60px;
-  }
-  
-  nav#gnb {
-    height: 200px;
-    line-height: 35px;
-    border: 1px solid #0f0;
-  }
-  
-  nav#gnb a {
-    color: #aaa;
-    font-size: 18px;
-  }
-  
-  div#sideMenuArea button {
-    color: #aaa;
-    font-size: 25px;
-    border: 1px solid #000;
-    background-color: #000;
-  
-    position: relative;
-    bottom: 43px;
-    left: 130px;
-    bottom: 350px;
-  
-    cursor: pointer;
-  }
+}
+
+header#header div#lnb {
+  width: 190px;
+  border: 1px solid #00f;
+}
+
+header#header div#lnb ul {
+  justify-content: right;
+  margin-right: 50px;
+}
+
+header#header div#lnb a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* header 끝 */
+
+/* div#sideMenuArea 시작 */
+
+div#sideMenuBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: none;
+}
+
+div#sideMenuArea {
+  width: 320px;
+  height: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+  padding: 80px 24px;
+  text-align: center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+div#sideMenuHeader {
+  margin-bottom: 60px;
+}
+
+nav#gnb {
+  height: 200px;
+  line-height: 35px;
+  border: 1px solid #0f0;
+}
+
+nav#gnb a {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav#gnb a:hover {
+  color: #fff;
+}
+
+div#sideMenuArea button {
+  color: #aaa;
+  font-size: 25px;
+  border: 1px solid #000;
+  background-color: #000;
+
+  position: relative;
+  bottom: 43px;
+  left: 130px;
+  bottom: 350px;
+
+  cursor: pointer;
+}
+/* div#sideMenuArea 끝 */
+
+/* main#main 시작*/
+
+div#about1,
+#about2 {
+  border: 1px solid #0f8;
+}
+
+div#about1 li:first-child {
+  line-height: 650px;
+}
+
+div#about1 li:last-child {
+  width: 620px;
+  height: 200px;
+  border: 1px solid #f00;
+  text-align: justify;
+  margin-top: 225px;
+  margin-left: 15px;
+}
+
+div#about2 ul {
+  margin-top: 50px;
+  justify-content: right;
+}
+
+div#about2 li:first-child {
+  text-align: right;
+  padding-top: 60px;
+  margin-right: 30px;
+  border: 1px solid #f00;
+}
+
+div#about2 li h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+div#about2 li p {
+  color: #fff;
+  margin-top: 20px;
+  border: 1px solid #00f;
+}
+
+/* main#main 끝*/
