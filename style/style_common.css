@@ -2,12 +2,7 @@
 @import url(style_Reset.css);
 
 body {
-  background-image: url(../images/mainPage/6d01ae4275364.jpg),
-    url(../images/mainPage/9a1fbee9b0324.jpg),
-    url(../images/mainPage/9ad5b2a2812eb.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-color: #000;
 }
 
 div#wrapFrame {
@@ -17,17 +12,24 @@ div#wrapFrame {
   margin: 0;
   padding: 0;
 }
-/* 
-main#main{
-  border: 6px solid #0f0;
-  width: 100%;
-  height: 850px;
-} */
+
+main#main li,
+h2 {
+  color: #fff;
+}
+
+main#main #about1 {
+  height: 600px;
+}
+
+main#main #about2 {
+  height: 700px;
+}
 
 div#wrap {
   width: 1250px;
   border: 1px solid #8f8;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 /* header 시작 */
@@ -36,6 +38,8 @@ header#header {
   height: 75px;
   line-height: 70px;
   justify-content: space-between;
+
+  background-color: #000;
 
   border: 1px solid #f00;
 }
@@ -55,8 +59,8 @@ div#gnbBtn a {
   color: #fff;
   font-size: 19px;
   /* 
-  position: relative;
-  z-index: 10; */
+      position: relative;
+      z-index: 10; */
 }
 
 header#header div#lnb {
@@ -72,6 +76,12 @@ header#header div#lnb ul {
 header#header div#lnb a {
   color: #fff;
   margin-right: 10px;
+}
+
+div#stickyArea {
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 
 /* header 끝 */
@@ -141,5 +151,4 @@ div#sideMenuArea button {
 div#sideMenuArea button:hover {
   color: #fff;
 }
-
 /* div#sideMenuArea 끝 */
