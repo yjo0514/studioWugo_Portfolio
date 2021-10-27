@@ -101,5 +101,10 @@ $(function(){
 
      //sideMenu 끝
 
+     //notice 권한 알림 시작
+     $("#bbs button").click(function(){
+          alert("작성 권한이 없습니다.");
+     })
+     //notice 권한 알림 끝
 
 });

@@ -53,6 +53,7 @@ div#gnbBtn {
   width: 165px;
   border: 1px solid #00f;
   display: inline-block;
+  padding-left: 10px;
 }
 
 div#gnbBtn a {
@@ -152,3 +153,40 @@ div#sideMenuArea button:hover {
   color: #fff;
 }
 /* div#sideMenuArea 끝 */
+
+/* footer#footer 시작 */
+
+footer#footer {
+  border: 1px solid #00f;
+  font-size: 11px;
+}
+
+footer#footer div#footerMenu {
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+
+footer#footer div#footerMenu li {
+  margin-right: 20px;
+}
+
+footer#footer div#footerMenu li:last-child {
+  font-weight: bold;
+}
+
+div#footerMenu #snsIcon a i:hover {
+  color: rgb(121, 121, 121);
+}
+
+footer#footer div#footerItem p {
+  line-height: 45px;
+}
+
+footer#footer div#footerItem span {
+  color: rgb(138, 138, 138);
+  font-size: 10px;
+  line-height: 18px;
+}
+
+/* footer#footer 끝 */

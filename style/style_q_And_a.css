@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url(style_common.css);
+
+body {
+  background-color: #fff;
+}
+
+div#headerFrame {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+}
+
+main#main {
+  width: 1250px;
+  height: 575px;
+  border: 1px solid #8f8;
+  margin: 0 auto;
+}
+
+/* Q&A 게시판 시작 */
+
+div#qAndaBbs {
+  height: 360px;
+  border: 1px solid #000;
+  margin-top: 80px;
+}
+
+div#qAndaBbs h3 {
+  font-size: 22px;
+}
+
+div#qAndaBbs div#lock {
+  height: 230px;
+  border: 1px solid #f00;
+}
+
+div#qAndaBbs #lock span {
+  border: 2px solid #ccc;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#qAndaBbs #round {
+  width: 35px;
+  height: 70px;
+  border-radius: 23px;
+}
+
+div#qAndaBbs span#square {
+  width: 60px;
+  height: 40px;
+  background-color: #fff;
+
+  position: relative;
+  left: 46.8%;
+  top: 100px;
+}
+
+div#qAndaBbs #lock p {
+  color: #aaa;
+  margin-top: 110px;
+  text-align: center;
+}
+
+div#qAndaBbs button {
+  font-size: 13px;
+  border: 1.5px solid #ccc;
+  padding: 10px 17px;
+  background-color: #fff;
+
+  position: relative;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%, -50%);
+}
+
+div#qAndaBbs button:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+/* Q&A 게시판 끝 */

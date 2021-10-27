@@ -93,3 +93,12 @@ div#bbs button {
 }
 
 /* bbs 게시판 끝 */
+
+/* footer#footer 시작 */
+
+footer#footer {
+  position: relative;
+  top: 130px;
+}
+
+/* footer#footer 끝 */
