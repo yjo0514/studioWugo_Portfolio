@@ -27,7 +27,7 @@ main#main{
 div#wrap {
   width: 1250px;
   border: 1px solid #8f8;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 /* header 시작 */
