@@ -10,14 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="../../style/style_Cart.css" />
 
-    <link rel="stylesheet" href="../../style/style_contact.css" />
     <script src="../../script/jquery-3.6.0.min.js"></script>
     <script src="../../script/script.js"></script>
-  </head>
+  
+
+</head>
   <body>
     <div id="wrapFrame">
-      <div id="stickyArea">
         <div id="headerFrame">
           <div id="wrap">
             <header id="header" class="flex-container">
@@ -40,67 +41,63 @@
 
               <div id="lnb">
                 <ul class="flex-container">
-                  <li><a href="../../subManu/login/login.html">Login</a></li>
+                  <li><a href="../login/login.html">Login</a></li>
                   <li><a href="#">Join</a></li>
-                  <li><a href="../../subManu/cart/cart.html">Cart</a></li>
+                  <li><a href="#">Cart</a></li>
                 </ul>
               </div>
               <!-- div#lnb -->
             </header>
           </div>
           <!-- div#wrap  -->
+
         </div>
         <!-- div#headerFrame -->
-      </div>
-      <!-- div#stickyArea -->
 
-      <main id="main">
-      
-        <div id="contact">
+          
+        <main id="main">
 
-            <h2>Contact</h2>
+            <div id="cart">
 
-            <p>E-mail</p>
-            <span>studiowugo@gmail.com</span>
+        <div id="cartHeader">
+            <h2>장바구니</h2>
+            <span>0</span>
+        </div>
+        <!-- div#cartHeader -->
 
-            <p>SNS</p>
-            <span id="snsPoint">Instagram</span>
+        <div id="cartMain">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>item</th>
+                        <th>위시</th>
+                        <th>수량</th>
+                        <th>배송수단</th>
+                        <th>배송비</th>
+                        <th>가격</th>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            
+            <span>
+                <img src="../../images/icon/shopping-cart.png" alt="" width="50" height="50">
+            </span>
+            <p>장바구니가 비어있습니다.</p>
 
         </div>
-        <!-- div#contact -->
+        <!-- div#cartMain -->
 
+            <a href="../../index.html">
+            <p>계속 쇼핑하기</p>
+             </a>
 
+        </div>
+        <!-- div#cart -->
 
-        <footer id="footer">
-          <div id="footerMenu" class="flex-container">
-            <ul class="flex-container">
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-            </ul>
+        </main>
 
-            <div id="snsIcon">
-              <a href="#">
-                <i class="fa fa-instagram" style="font-size: 20px"></i>
-              </a>
-            </div>
-            <!-- div#snsIcon -->
-          </div>
-          <!-- div#footerMenu -->
-
-          <div id="footerItem">
-            <p>스튜디오우고</p>
-
-            <span>
-              스튜디오우고 <br />
-              사업자등록번호 664-50-00605 대표자 손양현 <br />
-              통신판매신고번호: 2021-경남양산-0706호 <br />
-              연락처 studiowugo@gmail.com <br />
-              개인정보처리방침주소 경상남도 양산시 양주로 94
-            </span>
-          </div>
-          <!-- div#footerItem -->
-        </footer>
-      </main>
 
       <div id="sideMenuBG">
         <div id="sideMenuArea">
@@ -118,11 +115,11 @@
 
           <nav id="gnb">
             <ul id="mainMenu">
-              <li class="mainLi"><a href="../about/about.html">About</a></li>
-              <li class="mainLi"><a href="../shop/shop.html">Shop</a></li>
-              <li class="mainLi"><a href="../notice/notice.html">Notice</a></li>
-              <li class="mainLi"><a href="../q_And_a/q_and_A.html">Q&A</a></li>
-              <li class="mainLi"><a href="#">Contact</a></li>
+              <li class="mainLi"><a href="../../mainMenu/about/about.html">About</a></li>
+              <li class="mainLi"><a href="../../mainMenu/shop/shop.html">Shop</a></li>
+              <li class="mainLi"><a href="../../mainMenu/notice/notice.html">Notice</a></li>
+              <li class="mainLi"><a href="../../mainMenu/q_And_a/q_and_A.html">Q&A</a></li>
+              <li class="mainLi"><a href="../../mainMenu/contact/contact.html">Contact</a></li>
             </ul>
           </nav>
 

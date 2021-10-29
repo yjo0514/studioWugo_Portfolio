@@ -47,7 +47,40 @@ div#goodsShop {
 
 /* 이미지 변경 시작 */
 
+.articleImage {
+  width: 395px;
+  height: 580px;
+  position: relative;
+}
+
+.articleImage a img {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
+.articleImage a > .second {
+  opacity: 0;
+}
+
+.articleImage a:hover > .second {
+  opacity: 1;
+}
+
 /* 이미지 변경 끝 */
+
+/* 원 텍스트 표시 시작 */
+
+.articleFrame .goodsPrice::after {
+  content: "원";
+}
+
+/* 원 텍스트 표시 끝 */
 
 /* goodsShop 끝 */
 footer#footer {

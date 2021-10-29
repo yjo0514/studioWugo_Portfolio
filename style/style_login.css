@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url(style_common.css);
+
+body {
+  background-color: #fff;
+}
+
+div#headerFrame {
+  width: 100%;
+  height: 720px;
+  background-color: #000;
+  border: 1px solid #f00;
+}
+
+main#main {
+  width: 1250px;
+  height: 640px;
+  border: 1px solid #8f8;
+  margin: 0 auto;
+}
+
+/* login 시작 */
+
+div#loginFrame {
+  width: 282px;
+  height: 485px;
+  margin: 0 auto;
+  border: 1px solid #0ff;
+  margin-top: 75px;
+}
+
+div#loginFrame #snsLogin p {
+  color: #fff;
+  font-size: 15px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #20c801;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+div#loginFrame #snsLogin p:last-child {
+  color: #000;
+  background-color: #ffeb00;
+}
+
+div#loginFrame #snsLogin span img {
+  position: relative;
+  right: 45px;
+}
+
+fieldset {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #fff;
+}
+
+fieldset legend {
+  color: #fff;
+  padding: 20px;
+}
+
+div#loginFrame input,
+button {
+  width: 282px;
+  height: 45px;
+}
+
+div#loginFrame > fieldset input {
+  font-size: 15px;
+  border: 1px solid #aaa;
+}
+
+div#loginFrame > fieldset input[type="password"] {
+  position: relative;
+  bottom: 1px;
+}
+
+div#loginFrame > fieldset input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+div#loginFrame > fieldset > b {
+  width: 100%;
+  font-weight: normal;
+  text-align: left;
+  display: inline-block;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+div#loginFrame > fieldset > b > span {
+  color: #fff;
+  position: relative;
+  bottom: 3px;
+}
+
+div#loginFrame > fieldset button {
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+div#loginFrame > fieldset button:hover {
+  border: 1px solid #aaa;
+}
+
+#findLogin {
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#findLogin p {
+  color: #fff;
+  cursor: pointer;
+}
+
+#findLogin span {
+  color: #fff;
+}
+
+div#loginFrame > fieldset button:last-child {
+  background-color: #8393a7;
+}
+
+div#loginFrame > fieldset button:last-child :hover {
+  border: 2px solid #fff;
+}
+
+/* login 끝 */

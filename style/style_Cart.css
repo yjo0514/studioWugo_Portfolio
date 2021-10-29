@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url(style_common.css);
+
+body {
+  background-color: #fff;
+}
+
+div#headerFrame {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+}
+
+main#main {
+  width: 1250px;
+  height: 630px;
+  border: 1px solid #8f8;
+  margin: 0 auto;
+}
+
+/* cart 시작 */
+
+div#cart {
+  width: 100%;
+  height: 450px;
+  border: 1px solid #000;
+  margin-top: 110px;
+}
+
+div#cart div#cartHeader h2 {
+  color: #000;
+  font-weight: normal;
+}
+
+div#cart div#cartHeader span {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 100px;
+
+  background-color: #000;
+
+  position: relative;
+  top: -27px;
+  left: 110px;
+}
+
+div#cartMain table {
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+  margin-top: 20px;
+}
+
+div#cartMain table th {
+  color: rgb(105, 104, 104);
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  /* border: 1px solid #000; */
+}
+
+div#cartMain th:first-child {
+  width: 530px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+div#cartMain th:last-child {
+  width: 300px;
+  padding-right: 50px;
+}
+
+div#cartMain {
+  height: 335px;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+div#cartMain span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#cartMain p {
+  color: #aaa;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50%, -50%);
+}
+
+div#cart a {
+  text-align: center;
+  display: inline-block;
+  /* border: 1px solid #000; */
+  margin-top: 15px;
+  text-decoration: underline;
+
+  position: relative;
+  left: 46%;
+}
+
+/* cart 끝 */

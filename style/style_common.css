@@ -135,14 +135,14 @@ nav#gnb a:hover {
 
 div#sideMenuArea button {
   color: #aaa;
-  font-size: 25px;
+  font-size: 20px;
   border: 1px solid #000;
   background-color: #000;
 
   position: relative;
   bottom: 43px;
-  left: 130px;
-  bottom: 350px;
+  left: 120px;
+  bottom: 360px;
 
   transform: scaleX(1.5);
 
