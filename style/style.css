@@ -2,13 +2,27 @@
 @import url(style_Reset.css);
 
 body {
-  background-image: url(../images/mainPage/6d01ae4275364.jpg),
-    url(../images/mainPage/9a1fbee9b0324.jpg),
-    url(../images/mainPage/9ad5b2a2812eb.jpg);
+  transition: background 2s;
+  background-image: url(../images/mainPage/9ad5b2a2812eb.jpg);
+
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
+/* 검은 프레임 구현 시작 */
+
+div#bgCover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  z-index: -10;
+}
+
+/* 검은 프레임 구현 시작 */
 
 div#wrapFrame {
   width: 100%;

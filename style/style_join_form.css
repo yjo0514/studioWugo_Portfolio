@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url(style_common.css);
+
+body {
+  background-color: #fff;
+}
+
+div#headerFrame {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+}
+
+main#main {
+  width: 1250px;
+  border: 1px solid #00f;
+  height: 510px;
+  margin: 0 auto;
+}
+
+/* joinForm 시작 */
+
+div#joinForm {
+  width: 480px;
+  /* border: 1px solid #000; */
+  margin: 0 auto;
+}
+
+div#frofileFrame {
+  text-align: center;
+}
+
+div#frofile {
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid #00f; */
+  margin: 22px 0;
+
+  display: inline-block;
+  border-radius: 100px;
+
+  background-image: url(../images/mainPage/default_profile.png);
+  background-size: 80px;
+}
+
+input,
+button {
+  width: 470px;
+  height: 44px;
+  font-size: 15px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+p {
+  width: 480px;
+  border: 1px solid #ccc;
+}
+
+#joinID p:first-child {
+  position: relative;
+  top: 1px;
+}
+
+#joinID p:last-child {
+  position: relative;
+  top: -1px;
+}
+
+div#joinForm h4 {
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+  padding: 10px 0 0 0;
+}
+
+div#joinForm span {
+  font-size: 12px;
+  padding-left: 10px;
+  line-height: 33px;
+  color: #f00;
+}
+
+div#joinForm span#point {
+  font-size: 17px;
+  color: #f00;
+}
+
+div#joinForm button {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 22px;
+  border: none;
+  background-color: #000;
+
+  cursor: pointer;
+}
+
+/* joinForm 끝 */

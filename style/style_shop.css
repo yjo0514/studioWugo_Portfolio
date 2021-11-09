@@ -53,7 +53,7 @@ div#goodsShop {
   position: relative;
 }
 
-.articleImage a img {
+.articleImage img {
   width: 100%;
   height: 100%;
   border: 0px;
@@ -64,11 +64,11 @@ div#goodsShop {
   transition: opacity 0.5s;
 }
 
-.articleImage a > .second {
+.articleImage > .second {
   opacity: 0;
 }
 
-.articleImage a:hover > .second {
+.articleImage:hover > .second {
   opacity: 1;
 }
 

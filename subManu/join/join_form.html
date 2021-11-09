@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../../style/style_login.css" />
+    <link rel="stylesheet" href="../../style/style_join_form.css" />
 
     <script src="../../script/jquery-3.6.0.min.js"></script>
     <script src="../../script/script.js"></script>
@@ -41,7 +41,7 @@
 
               <div id="lnb">
                 <ul class="flex-container">
-                  <li><a href="#">Login</a></li>
+                  <li><a href="../login/login.html">Login</a></li>
                   <li><a href="../join/join.html">Join</a></li>
                   <li><a href="../cart/cart.html">Cart</a></li>
                 </ul>
@@ -51,72 +51,61 @@
           </div>
           <!-- div#wrap  -->
 
-          
-      <main id="main">
-
-        <div id="loginFrame">
-
-            <div id="snsLogin">
-                <p>
-                    <span>
-                        <img src="../../images/icon/naver.jpg" alt="네이버로고" width="30" height="30">
-                    </span>
-                    네이버로 시작하기
-                </p>
-
-                <p>
-                    <span>
-                        <img src="../../images/icon/kako.png" alt="카카오로고" width="20" height="20">
-                    </span>
-                    카카오로 시작하기
-                </p>
-
-            </div>
-            <!-- div#snsLogin -->
-
-            <fieldset>
-                <legend>또는</legend>
-
-                <input type="text" placeholder="    아이디">
-                <input type="password" placeholder="    비밀번호">
-                <br>
-                <b>
-                <input type="checkbox"> <span>로그인상태유지</span>
-               </b>
-                <br>
-                <button type="button">로그인</button>
-
-                <div id="findLogin" class="flex-container">
-                    <p>회원가입</p>
-
-                    <p>
-                        <span>아이디</span>
-                        <span>·</span>
-                        <span>비밀번호</span>
-                    </p>
-                </div>
-                <!-- div#findLogin -->
-
-            </fieldset>
-            
-            <fieldset>
-                <legend>또는</legend>
-
-                <button type="button">비회원 주문배송 조회</button>
-
-            </fieldset>
-
-
-
-        </div>
-        <!-- div#loginFrame -->
-
-    </main>
-
         </div>
         <!-- div#headerFrame -->
 
+        <main id="main">
 
+            <div id="joinForm">
+              <div id="frofileFrame">
+                <div id="frofile">
+                </div>
+                <!-- div#frofile -->
+              </div>
+              <!-- div#frofileFrame -->
+                            
+
+                <div id="joinID">
+
+                  <p id="idArea">
+                    <input type="text" name="id" id="id" placeholder="아이디">
+                      <span id="idMsg"></span>
+                    </p>
+                    <p id="pwArea">
+                    <input type="password" name="pw" id="pw" placeholder="비밀번호">
+                    <span id="pwMsg"></span>
+                  </p>
+                    <p id="pwReArea">
+                    <input type="password" name="pwRe" id="pwRe" placeholder="비밀번호 확인">
+                    <span id="pwReMsg"></span>
+                  </p>
+                  </div>
+                <!-- div#joinID -->
+
+                <div id="email">
+                    <h4>이메일 <span id="point">	&#8226;</span></h4>
+                    <p id="uEmailArea">
+                    <input type="text" name="uEmail" id="uEmail" placeholder="이메일">
+                  <span id="uEmailMsg"></span>
+                  </p>
+                  </div>
+                <!-- div#email -->
+
+                <div id="nickname">
+                    <h4>이름 <span id="point">	&#8226;</span></h4>
+                    <p id="uNameArea">
+                    <input type="text" name="uName" id="uName" placeholder="이름을(를) 입력하세요">
+                    <span id="uNameMsg"></span>
+                  </p>
+                  </div>
+                <!-- div#nickname -->
+
+                <button type="button" onclick="fnSbm()">가입하기</button>
+
+            </div>
+            <!-- div#joinForm -->
+
+        </main>
 
       <div id="sideMenuBG">
         <div id="sideMenuArea">

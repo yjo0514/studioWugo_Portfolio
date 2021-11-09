@@ -1,0 +1,620 @@
+@charset "UTF-8";
+@import url(style_common.css);
+
+body {
+  background-color: #fff;
+}
+
+div#headerFrame {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #f00;
+}
+
+main#main {
+  width: 1250px;
+  height: 100%;
+  border: 1px solid #8f8;
+  margin: 0 auto;
+}
+
+aside#aside {
+  width: 1250px;
+  height: 100%;
+  border: 1px solid #8f8;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* goods1 시작 */
+
+div#goodsHeader {
+  border: 1px solid #f00;
+  height: 1100px;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+/* goodsMain 시작 */
+
+div#goodsSlide img {
+  width: 610px;
+  height: 895px;
+}
+
+div#goodsMain ul {
+  margin-top: 10px;
+}
+
+div#goodsMain li {
+  margin-right: 2px;
+  border: 1px solid #fff;
+}
+
+div#goodsMain li:hover {
+  border: 1px solid #000;
+}
+
+/* goodsMain 끝 */
+
+div#goodsExplain {
+  width: 520px;
+  height: 675px;
+  border: 1px solid #00f;
+}
+
+div#goodsExplain > .material-icons {
+  float: right;
+  cursor: pointer;
+}
+
+div#goodsExplain h4 {
+  font-size: 17px;
+}
+div#goodsExplain p#mainExplain {
+  font-size: 11px;
+  line-height: 23px;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+}
+
+div#goodsExplain p#shoppingGuide {
+  font-size: 12px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+
+div#goodsExplain p#shoppingGuide strong {
+  padding-right: 5px;
+}
+
+div#goodsExplain p#shoppingGuide span {
+  color: rgb(116, 114, 114);
+  padding-left: 5px;
+}
+div#goodsExplain p#shoppingGuide i {
+  padding-left: 5px;
+}
+
+div#goodsExplain p#goodsCount {
+  font-size: 14px;
+  padding: 25px 0;
+}
+
+/* amountBox 시작 */
+
+div#amountBox {
+  height: 110px;
+  /* border: 1px solid #000; */
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
+div#amountBox p:first-child {
+  height: 35px;
+  line-height: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1.5px dotted rgb(202, 202, 202);
+}
+
+div#amountBox #amountChk {
+  line-height: 70px;
+  justify-content: space-between;
+}
+
+div#amountBox #amountChk #price::after {
+  content: "원";
+}
+
+/* 고정 가격 숨기기 시작 */
+
+#priceCnt {
+  color: #fff;
+  font-size: 0px;
+}
+
+/* 고정 가격 숨기기 끝 */
+
+#amountChk #countArea span {
+  width: 25px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  display: inline-block;
+
+  background-color: #fff;
+}
+
+#amountChk #countArea span:first-child {
+  font-size: 30px;
+  color: #ccc;
+  position: relative;
+  top: 3px;
+
+  line-height: 25px;
+
+  cursor: pointer;
+}
+
+#amountChk #countArea input {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  position: relative;
+  right: 5px;
+  bottom: 1px;
+}
+
+#amountChk #countArea span:last-child {
+  font-size: 20px;
+  color: #ccc;
+  line-height: 25px;
+  position: relative;
+  right: 10px;
+
+  cursor: pointer;
+}
+
+/* amountBox 끝 */
+
+/* goodsBtnArea 시작 */
+
+/* div#goodsBtnArea {
+  border: 1px solid #0f0;
+} */
+
+div#goodsBtnArea button {
+  font-size: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+div#goodsBtnArea button:first-child {
+  width: 253px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+div#goodsBtnArea button#loginPopBtn {
+  color: #fff;
+  background-color: #000;
+}
+
+div#goodsBtnArea a button {
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+div#goodsBtnArea button:nth-child(4) {
+  width: 452px;
+  background-color: #00c73c;
+  border: none;
+}
+div#goodsBtnArea button:nth-child(5) {
+  color: #00c73c;
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  transform: translateY(2px);
+}
+
+/* goodsBtnArea 끝 */
+
+/* detailInfo 시작 */
+
+div#detailInfoArea {
+  width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  border: 3px solid #00f;
+}
+
+div#stickyArea {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+div#stickyArea ul {
+  width: 1250px;
+  border: 1px solid #f00;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 auto;
+
+  background-color: #fff;
+}
+
+div#stickyArea li {
+  color: #aaa;
+  font-size: 15px;
+  padding-left: 45px;
+}
+
+div#stickyArea li span {
+  width: 15px;
+  height: 15px;
+  color: #000;
+  font-size: 10px;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  background-color: #ccc;
+
+  position: relative;
+  bottom: 2px;
+  left: 5px;
+}
+
+/* detailInfo 끝 */
+
+/* div#shoppingInfo 시작 */
+
+div#shoppingInfo {
+  /* border: 1px solid #f00; */
+  height: 380px;
+}
+
+div#shoppingInfo h4 {
+  font-size: 15px;
+  padding: 30px 0 10px 0;
+}
+
+div#shoppingInfo li {
+  color: #000;
+  font-size: 13px;
+  line-height: 21px;
+  margin-left: 22px;
+}
+
+/* div#shoppingInfo 끝 */
+
+/* div#review 시작 */
+
+div#review h4 {
+  padding: 20px 0;
+}
+
+div#review span {
+  width: 15px;
+  height: 15px;
+  color: #000;
+  font-size: 10px;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  background-color: #ccc;
+
+  position: relative;
+  bottom: 42px;
+  left: 54px;
+}
+
+div#review p {
+  color: rgb(102, 102, 102);
+  font-size: 11px;
+  line-height: 21px;
+  padding-top: 10px;
+
+  border-top: 1px solid #ccc;
+}
+
+div#review p:last-child {
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  line-height: 21px;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #000;
+
+  border-top: none;
+}
+
+div#review a button {
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: #000;
+  margin: 8px 0 20px 0;
+}
+
+div#review > div {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+}
+
+div#review a:last-child button {
+  margin-top: 20px;
+  float: right;
+}
+
+/* div#review 끝 */
+
+/* div#qandaArea 시작 */
+
+div#qandaArea h4 {
+  margin-top: 130px;
+}
+
+div#qandaArea span {
+  width: 15px;
+  height: 15px;
+  color: #000;
+  font-size: 10px;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  background-color: #ccc;
+
+  position: relative;
+  bottom: 22px;
+  left: 40px;
+}
+
+div#qandaArea p {
+  color: rgb(102, 102, 102);
+  font-size: 11px;
+  line-height: 21px;
+}
+
+div#qandaArea a button {
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+div#qandaArea a:nth-child(5) button {
+  color: #000;
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+div#qandaArea a:nth-child(5) button:hover {
+  border: 1px solid #000;
+}
+
+div#qandaArea a:last-child button {
+  margin-top: 15px;
+  float: right;
+  margin-bottom: 50px;
+}
+
+div#qandaArea table {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+div#qandaArea table th {
+  font-size: 13px;
+  padding: 8px;
+  /* border: 1px solid #000; */
+  text-align: center;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+div#qandaArea table th:first-child {
+  width: 100px;
+}
+
+div#qandaArea table th:nth-child(2) {
+  width: 780px;
+}
+
+div#qandaArea table th:last-child {
+  width: 150px;
+}
+
+div#qandaArea td {
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* div#qandaArea 끝 */
+
+/* goods1 끝 */
+
+/* 팝업 로그인 시작 */
+
+div#popLoginBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: none;
+}
+
+div#popLoginArea {
+  width: 365px;
+  height: 625px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+}
+
+div#popLoginArea h1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+}
+
+div#popLoginArea #popBtnArea > button {
+  width: 20px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+
+  position: relative;
+  bottom: 50px;
+  left: 330px;
+
+  transform: scaleX(1.5);
+
+  cursor: pointer;
+}
+
+div#popLoginArea #popBtnArea > button:hover {
+  color: #000;
+}
+
+/* login 시작 */
+
+div#loginFrame {
+  width: 300px;
+  height: 485px;
+  margin: 0 auto;
+}
+
+div#loginFrame #snsLogin p {
+  color: #fff;
+  font-size: 15px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #20c801;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+div#loginFrame #snsLogin p:last-child {
+  color: #000;
+  background-color: #ffeb00;
+}
+
+div#loginFrame #snsLogin span img {
+  position: relative;
+  right: 45px;
+}
+
+fieldset {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+fieldset legend {
+  padding: 20px;
+}
+
+div#loginFrame input,
+div#loginFrame button {
+  width: 300px;
+  height: 45px;
+}
+
+div#loginFrame > fieldset input {
+  font-size: 15px;
+  border: 1px solid #aaa;
+}
+
+div#loginFrame > fieldset input[type="password"] {
+  position: relative;
+  bottom: 1px;
+}
+
+div#loginFrame > fieldset input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+div#loginFrame > fieldset > b {
+  width: 100%;
+  font-weight: normal;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+div#loginFrame > fieldset > b > span {
+  position: relative;
+  bottom: 3px;
+}
+
+div#loginFrame > fieldset button {
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  border: none;
+}
+
+div#loginFrame > fieldset button:hover {
+  border: 1px solid #aaa;
+}
+
+#findLogin {
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#findLogin p {
+  cursor: pointer;
+}
+
+div#loginFrame > fieldset button:last-child {
+  background-color: #8393a7;
+}
+
+div#loginFrame > fieldset button:last-child :hover {
+  border: 1px solid #000;
+}
+
+/* login 끝 */
+
+/* 팝업 로그인 끝 */

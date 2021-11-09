@@ -83,6 +83,7 @@ div#stickyArea {
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 99;
 }
 
 /* header 끝 */
@@ -99,6 +100,7 @@ div#sideMenuBG {
   top: 0;
 
   display: none;
+  z-index: 999;
 }
 
 div#sideMenuArea {
