@@ -2,27 +2,8 @@
 @import url(style_Reset.css);
 
 body {
-  transition: background 2s;
-  background-image: url(../images/mainPage/9ad5b2a2812eb.jpg);
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-color: #000;
 }
-
-/* 검은 프레임 구현 시작 */
-
-div#bgCover {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.336);
-  z-index: -10;
-}
-
-/* 검은 프레임 구현 시작 */
 
 div#wrapFrame {
   width: 100%;
@@ -31,17 +12,24 @@ div#wrapFrame {
   margin: 0;
   padding: 0;
 }
-/* 
-main#main{
-  border: 6px solid #0f0;
-  width: 100%;
-  height: 850px;
-} */
+
+main#main li,
+h2 {
+  color: #fff;
+}
+
+main#main #about1 {
+  height: 600px;
+}
+
+main#main #about2 {
+  height: 700px;
+}
 
 div#wrap {
   width: 1250px;
-  /* border: 1px solid #8f8; */
-  margin: 0px auto;
+  border: 1px solid #8f8;
+  margin: 0 auto;
 }
 
 /* header 시작 */
@@ -50,32 +38,35 @@ header#header {
   height: 75px;
   line-height: 70px;
   justify-content: space-between;
-  /* 
-  border: 1px solid #f00; */
+
+  background-color: #000;
+
+  border: 1px solid #f00;
 }
 
 div#headerLogo a {
-  /* border: 1px solid #00f; */
+  border: 1px solid #00f;
   display: inline-block;
 }
 
 div#gnbBtn {
   width: 165px;
-  /* border: 1px solid #00f; */
+  border: 1px solid #00f;
   display: inline-block;
+  padding-left: 10px;
 }
 
 div#gnbBtn a {
   color: #fff;
   font-size: 19px;
   /* 
-  position: relative;
-  z-index: 10; */
+      position: relative;
+      z-index: 10; */
 }
 
 header#header div#lnb {
   width: 190px;
-  /* border: 1px solid #00f; */
+  border: 1px solid #00f;
 }
 
 header#header div#lnb ul {
@@ -86,6 +77,13 @@ header#header div#lnb ul {
 header#header div#lnb a {
   color: #fff;
   margin-right: 10px;
+}
+
+div#stickyArea {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 
 /* header 끝 */
@@ -102,13 +100,14 @@ div#sideMenuBG {
   top: 0;
 
   display: none;
+  z-index: 999;
 }
 
 div#sideMenuArea {
   width: 320px;
   height: 100%;
   background-color: #000;
-  /* border: 1px solid #f00; */
+  border: 1px solid #f00;
   padding: 80px 24px;
   text-align: center;
 
@@ -124,7 +123,7 @@ div#sideMenuHeader {
 nav#gnb {
   height: 200px;
   line-height: 35px;
-  /* border: 1px solid #0f0; */
+  border: 1px solid #0f0;
 }
 
 nav#gnb a {
@@ -138,14 +137,14 @@ nav#gnb a:hover {
 
 div#sideMenuArea button {
   color: #aaa;
-  font-size: 25px;
+  font-size: 20px;
   border: 1px solid #000;
   background-color: #000;
 
   position: relative;
   bottom: 43px;
-  left: 130px;
-  bottom: 350px;
+  left: 120px;
+  bottom: 360px;
 
   transform: scaleX(1.5);
 
@@ -155,5 +154,41 @@ div#sideMenuArea button {
 div#sideMenuArea button:hover {
   color: #fff;
 }
-
 /* div#sideMenuArea 끝 */
+
+/* footer#footer 시작 */
+
+footer#footer {
+  border: 1px solid #00f;
+  font-size: 11px;
+}
+
+footer#footer div#footerMenu {
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+
+footer#footer div#footerMenu li {
+  margin-right: 20px;
+}
+
+footer#footer div#footerMenu li:last-child {
+  font-weight: bold;
+}
+
+div#footerMenu #snsIcon a i:hover {
+  color: rgb(121, 121, 121);
+}
+
+footer#footer div#footerItem p {
+  line-height: 45px;
+}
+
+footer#footer div#footerItem span {
+  color: rgb(138, 138, 138);
+  font-size: 10px;
+  line-height: 18px;
+}
+
+/* footer#footer 끝 */

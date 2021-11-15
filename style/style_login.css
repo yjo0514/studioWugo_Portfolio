@@ -9,13 +9,13 @@ div#headerFrame {
   width: 100%;
   height: 720px;
   background-color: #000;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
 }
 
 main#main {
   width: 1250px;
   height: 640px;
-  border: 1px solid #8f8;
+  /* border: 1px solid #8f8; */
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ div#loginFrame {
   width: 282px;
   height: 485px;
   margin: 0 auto;
-  border: 1px solid #0ff;
+  /* border: 1px solid #0ff; */
   margin-top: 75px;
 }
 
@@ -117,7 +117,8 @@ div#loginFrame > fieldset button:hover {
   margin-top: 5px;
 }
 
-#findLogin p {
+#findLogin p,
+#findLogin p > a {
   color: #fff;
   cursor: pointer;
 }
@@ -135,3 +136,192 @@ div#loginFrame > fieldset button:last-child :hover {
 }
 
 /* login 끝 */
+
+/* 비회원 주문배송 팝업 시작 */
+
+div#nonmemberBG {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.233);
+
+  display: none;
+}
+
+div#nonmemberFrame {
+  width: 370px;
+  height: 265px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div#nonmemberFrame h2 {
+  color: #000;
+  padding: 10px;
+  margin-top: 20px;
+  /* border: 1px solid #000; */
+}
+
+div#nonmemberFrame div#nonmemberBtn button {
+  width: 20px;
+  height: 20px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+
+  position: relative;
+  bottom: 60px;
+  left: 160px;
+
+  transform: scaleX(1.5);
+
+  cursor: pointer;
+}
+
+div#nonmemberFrame div#nonmemberBtn button:hover {
+  color: rgb(27, 27, 27);
+}
+
+div#nonmemberArea input,
+div#nonmemberArea button {
+  width: 320px;
+  height: 45px;
+  border: 1px solid #ccc;
+}
+
+/* div#nonmemberArea {
+  border: 1px solid #0f0;
+} */
+
+div#nonmemberArea input#address {
+  position: relative;
+  top: -1px;
+}
+
+div#nonmemberArea button {
+  color: #fff;
+  margin-top: 8px;
+  background-color: #000;
+  border: none;
+}
+/* 비회원 주문배송 팝업 끝 */
+
+/* 아이디 비밀번호 찾기 팝업 시작 */
+
+div#findBG {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.233);
+
+  display: none;
+}
+
+div#findFrame {
+  width: 370px;
+  height: 250px;
+  background-color: #fff;
+
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px solid #000; */
+}
+
+div#findFrame #findCloseBtn {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+div#findFrame #findCloseBtn p {
+  width: 370px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  /* padding-left: 20px; */
+}
+
+#findCloseBtn button {
+  width: 20px;
+  height: 20px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+
+  position: relative;
+  bottom: -13px;
+  left: -15px;
+
+  transform: scaleX(1.5);
+
+  cursor: pointer;
+}
+
+#findCloseBtn button:hover {
+  color: #000;
+}
+
+div#findArea {
+  padding: 15px;
+  width: 370px;
+}
+
+div#findFrame #findTabArea button {
+  font-size: 15px;
+  /* border: 1px solid #aaa; */
+  background-color: #fff;
+  flex: 1;
+}
+
+div#findFrame #findTabArea button:first-child {
+  border: 1px solid #000;
+  border-bottom: none;
+  z-index: 1;
+}
+
+div#findFrame #findTabArea button:nth-child(2) {
+  color: rgb(107, 107, 107);
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #000;
+  position: relative;
+  right: 1px;
+
+  background-color: rgb(228, 228, 228);
+}
+
+#findTbl input {
+  width: 335px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+#findTbl button {
+  width: 335px;
+  height: 40px;
+  color: #fff;
+  margin-top: 5px;
+  background-color: #000;
+  border: 1px solid #000;
+}
+/* 
+#findTbl #findPw {
+  display: none;
+} */
+
+/* 아이디 비밀번호 찾기 팝업 끝 */

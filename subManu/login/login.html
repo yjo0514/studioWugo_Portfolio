@@ -41,7 +41,7 @@
 
               <div id="lnb">
                 <ul class="flex-container">
-                  <li><a href="#">Login</a></li>
+                  <li><a href="login.html">Login</a></li>
                   <li><a href="../join/join.html">Join</a></li>
                   <li><a href="../cart/cart.html">Cart</a></li>
                 </ul>
@@ -77,19 +77,19 @@
             <fieldset>
                 <legend>또는</legend>
 
-                <input type="text" placeholder="    아이디">
-                <input type="password" placeholder="    비밀번호">
+                <input type="text" id="loginID" placeholder="    아이디">
+                <input type="password" id="loginPw" placeholder="    비밀번호">
                 <br>
                 <b>
                 <input type="checkbox"> <span>로그인상태유지</span>
                </b>
                 <br>
-                <button type="button">로그인</button>
+                <button type="button" onclick="fnLogBtn()">로그인</button>
 
                 <div id="findLogin" class="flex-container">
-                    <p>회원가입</p>
+                    <p><a href="../join/join.html">회원가입</a></p>
 
-                    <p>
+                    <p id="findPop">
                         <span>아이디</span>
                         <span>·</span>
                         <span>비밀번호</span>
@@ -102,7 +102,7 @@
             <fieldset>
                 <legend>또는</legend>
 
-                <button type="button">비회원 주문배송 조회</button>
+                <button type="button" id="nonmemberPop">비회원 주문배송 조회</button>
 
             </fieldset>
 
@@ -149,5 +149,81 @@
       <!-- div#sideMenuBG -->
     </div>
     <!-- div#wrapFrame -->
+
+
+    <div id="nonmemberBG">
+
+      <div id="nonmemberFrame">
+
+        <h2>비회원 주문조회</h2>
+
+        <div id="nonmemberBtn">
+        <button type="button">X</button>
+      </div>
+      <!-- div#nonmemberBtn -->
+
+      <div id="nonmemberArea">
+          <input type="text" id="nfo" placeholder="  주문번호">
+        <input type="text" id="address" placeholder="  연락처">
+        <br>
+        <button type="button" onclick="fnIqBtn()">로그인</button>
+
+      </div>
+      <!--div#nonmemberArea -->
+
+      </div>
+      <!-- div#nonmemberFrame -->
+
+    </div>
+<!-- div#nonmemberBG -->
+
+
+    <div id="findBG">
+
+      <div id="findFrame">
+
+        <div id="findCloseBtn" class="flex-container">
+
+          <p id="headerFind">아이디 찾기</p>
+          <button type="button">X</button>
+        </div>
+        <!-- div#findClodeBtn -->
+
+        
+        <div id="findArea">
+
+        <div id="findTabArea" class="flex-container">
+        <button type="button" class="findTabBtn">아이디 찾기</button>
+
+        <button type="button" class="findTabBtn">비밀번호 찾기</button>
+
+      </div>
+      <!-- div#findTabArea -->
+
+      <table id="findTbl">
+        <tbody id="findID">
+
+          <tr>
+            <td><input type="text" id="findUserID" placeholder="이메일 또는 아이디"></td>
+          </tr>
+          <tr>
+            <td><button type="button" id="findBtn">아이디 찾기</button></td>
+          </tr>
+        </tbody>
+       
+      </table>
+      <!-- table#findTbl -->
+
+    </div>
+    <!-- div#findArea -->
+
+      </div>
+      <!-- div#findFrame -->
+
+    </div>
+    <!-- div#findBG -->
+
+
+
   </body>
 </html>

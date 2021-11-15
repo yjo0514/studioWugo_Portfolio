@@ -2,11 +2,11 @@
 @import url(style_common.css);
 
 /* main#main 시작*/
-
+/* 
 div#about1,
 #about2 {
   border: 1px solid #0f8;
-}
+} */
 
 div#about1 li:first-child {
   line-height: 650px;
@@ -15,7 +15,7 @@ div#about1 li:first-child {
 div#about1 li:last-child {
   width: 620px;
   height: 210px;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
   text-align: justify;
   line-height: 30px;
   margin-top: 225px;
@@ -31,7 +31,7 @@ div#about2 li:first-child {
   text-align: right;
   padding-top: 60px;
   margin-right: 30px;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
 }
 
 div#about2 li h2 {
@@ -43,7 +43,7 @@ div#about2 li h2 {
 div#about2 li p {
   color: #fff;
   margin-top: 20px;
-  border: 1px solid #00f;
+  /* border: 1px solid #00f; */
 }
 
 /* main#main 끝*/

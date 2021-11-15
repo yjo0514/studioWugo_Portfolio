@@ -8,12 +8,12 @@ body {
 div#headerFrame {
   width: 100%;
   background-color: #000;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
 }
 
 main#main {
   width: 1250px;
-  border: 1px solid #00f;
+  /* border: 1px solid #00f; */
   height: 510px;
   margin: 0 auto;
 }
@@ -60,12 +60,19 @@ p {
 
 #joinID p:first-child {
   position: relative;
-  top: 1px;
+  top: 0px;
+}
+
+#joinID p:nth-child(2) {
+  border-top: none;
+  position: relative;
+  top: 0px;
 }
 
 #joinID p:last-child {
+  border-top: none;
   position: relative;
-  top: -1px;
+  top: 0px;
 }
 
 div#joinForm h4 {

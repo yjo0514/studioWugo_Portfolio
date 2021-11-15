@@ -8,20 +8,13 @@ body {
 div#headerFrame {
   width: 100%;
   background-color: #000;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
 }
 
 main#main {
   width: 1250px;
   height: 100%;
-  border: 1px solid #8f8;
-  margin: 0 auto;
-}
-
-aside#aside {
-  width: 1250px;
-  height: 100%;
-  border: 1px solid #8f8;
+  /* border: 1px solid #8f8; */
   margin: 0 auto;
 }
 
@@ -32,7 +25,7 @@ button {
 /* goods1 시작 */
 
 div#goodsHeader {
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
   height: 1100px;
   justify-content: space-between;
   padding-top: 50px;
@@ -43,6 +36,7 @@ div#goodsHeader {
 div#goodsSlide img {
   width: 610px;
   height: 895px;
+  transition: all 0.5s;
 }
 
 div#goodsMain ul {
@@ -63,7 +57,7 @@ div#goodsMain li:hover {
 div#goodsExplain {
   width: 520px;
   height: 675px;
-  border: 1px solid #00f;
+  /* border: 1px solid #00f; */
 }
 
 div#goodsExplain > .material-icons {
@@ -238,7 +232,7 @@ div#detailInfoArea {
   width: 720px;
   height: 100%;
   margin: 0 auto;
-  border: 3px solid #00f;
+  /* border: 3px solid #00f; */
 }
 
 div#stickyArea {
@@ -248,8 +242,7 @@ div#stickyArea {
 
 div#stickyArea ul {
   width: 1250px;
-  border: 1px solid #f00;
-  border-bottom: 1px solid #ccc;
+  /* border: 1px solid #f00; */
   justify-content: center;
   padding: 10px;
   margin: 0 auto;
@@ -272,7 +265,7 @@ div#stickyArea li span {
   line-height: 13px;
   font-weight: bold;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 100px;
   background-color: #ccc;
 
@@ -469,11 +462,12 @@ div#popLoginBG {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.651);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
 
   display: none;
+  z-index: 999;
 }
 
 div#popLoginArea {
@@ -559,6 +553,7 @@ div#loginFrame button {
 
 div#loginFrame > fieldset input {
   font-size: 15px;
+  border: none;
   border: 1px solid #aaa;
 }
 
@@ -618,3 +613,116 @@ div#loginFrame > fieldset button:last-child :hover {
 /* login 끝 */
 
 /* 팝업 로그인 끝 */
+
+/* 아이디 비밀번호 찾기 팝업 시작 */
+
+div#findBG {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.233);
+
+  display: none;
+  z-index: 100;
+}
+
+div#findFrame {
+  width: 370px;
+  height: 250px;
+  background-color: #fff;
+
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+
+  /* border: 1px solid #000; */
+}
+
+div#findFrame #findCloseBtn {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+div#findFrame #findCloseBtn p {
+  width: 370px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  /* padding-left: 20px; */
+}
+
+#findCloseBtn button {
+  width: 20px;
+  height: 20px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+
+  position: relative;
+  bottom: -13px;
+  left: -15px;
+
+  transform: scaleX(1.5);
+
+  cursor: pointer;
+}
+
+#findCloseBtn button:hover {
+  color: #000;
+}
+
+div#findArea {
+  padding: 15px;
+  width: 370px;
+}
+
+div#findFrame #findTabArea button {
+  height: 40px;
+  font-size: 15px;
+  /* border: 1px solid #aaa; */
+  background-color: #fff;
+  flex: 1;
+}
+
+div#findFrame #findTabArea button:first-child {
+  border: 1px solid #000;
+  border-bottom: none;
+  z-index: 1;
+}
+
+div#findFrame #findTabArea button:nth-child(2) {
+  color: rgb(107, 107, 107);
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #000;
+  position: relative;
+  right: 1px;
+
+  background-color: rgb(228, 228, 228);
+}
+
+#findTbl input {
+  width: 335px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+#findTbl button {
+  width: 335px;
+  height: 40px;
+  color: #fff;
+  margin-top: 5px;
+  background-color: #000;
+  border: 1px solid #000;
+}
+/* 
+#findTbl #findPw {
+  display: none;
+} */
+
+/* 아이디 비밀번호 찾기 팝업 끝 */

@@ -27,7 +27,7 @@ $(function(){
      $("#gnbBtn a").click(function() {
          $(this).toggleClass("applied");
  
-         $("#sideMenuBG").fadeToggle(250);
+         $("#sideMenuBG").fadeToggle(220);
          if (chkToF) {
               $("#sideMenuArea").animate({"left": "0px"}, 250);
               chkToF = false;
@@ -40,7 +40,7 @@ $(function(){
      $("div#sideMenuArea button").click(function(){
         $(this).toggleClass("applied");
  
-        $("#sideMenuBG").fadeToggle(250);
+        $("#sideMenuBG").fadeToggle(220);
         if (chkToF) {
              $("#sideMenuArea").animate({"left": "0px"}, 250);
              chkToF = false;
@@ -84,6 +84,92 @@ $(function(){
      //popLoginBG 끝
 
 
+     //nonmemberPop 시작
+
+     $("#nonmemberPop").click(function(){
+          $("#nonmemberBG").css({"display":"block"});
+     });
+     
+     $("#nonmemberBtn button").click(function(){
+          $("#nonmemberBG").css({"display":"none"});
+     });
+
+     //nonmemberPop 끝
+
+     //findLoginPop 시작
+
+     $("#findPop").click(function(){
+          $("#findBG").css({"display":"block"});
+          $("#popLoginBG").css({"display":"none"});
+     });
+     
+     $("#findCloseBtn button").click(function(){
+          $("#findBG").css({"display":"none"});
+     });
+
+
+     $("button.findTabBtn").click(function(){
+
+          $("button.findTabBtn").css({
+               "color":"rgb(107, 107, 107)",
+               "border": "1px solid #ccc",
+               "background-color": "rgb(228, 228, 228)",
+               "border-bottom-color": "#000",
+               "z-index":"1"
+               
+           });
+   
+           $(this).css({
+                "color":"#000",
+               "border": "1px solid #000",
+               "background-color": "#fff",
+               "border-bottom-color": "#fff",
+               "z-index":"2"
+           });
+
+           var txt = $(this).text();
+           var cssAttr;
+           var placeholderTxt;
+
+           if (txt == "아이디 찾기") {
+               cssAttr = "border-left";
+               placeholderTxt = "이메일 또는 아이디";
+           } else {
+               cssAttr = "border-right";
+               placeholderTxt = "가입한 아이디";
+           }
+   
+           $(this).siblings("button").css({
+               cssAttr: "none"
+               
+           });
+
+           if(txt=="비밀번호 찾기"){
+           let findBtn=("비밀번호 찾기");
+           document.querySelector("#findBtn").innerText=findBtn;
+           
+          } else {
+           let findBtn=("아이디 찾기");
+           document.querySelector("#findBtn").innerText=findBtn;
+          }
+
+          if(txt=="비밀번호 찾기"){
+               let findHeader=("비밀번호 찾기");
+               document.querySelector("#headerFind").innerText=findHeader;
+              } else {
+               let findHeader=("아이디 찾기");
+               document.querySelector("#headerFind").innerText=findHeader;
+              }
+
+           $("#findUserID").attr("placeholder", placeholderTxt);
+
+
+
+     });
+
+
+     //findLoginPop 끝
+
 });
 
      //약관 동의 후 가입하기 시작
@@ -95,7 +181,7 @@ $(function(){
      //약관동의 체크박스, true/false만 존재함
  
   if (wholeChk==""){ //agree입력란이 공백이라면
-         alert("약관동의 체크를 확인해주세요.");   
+         alert("약관 및 개인정보 처리 방침에 동의하셔야 가입이 가능합니다.");   
          domChkbox.focus(); 
      } else{
           location="join_form.html";
@@ -153,6 +239,57 @@ $(function(){
      // 상품 수량 증가 감소 끝
 
 
+     //login Elseif 시작
+
+     function fnLogBtn(){
+          let logId= document.querySelector("#loginID").value;
+          logId=logId.trim();
+
+          if(logId==""){
+          alert("아이디를 입력 하세요.");
+          return;
+     }
+
+          let logPw= document.querySelector("#loginPw").value;
+          logPw=logPw.trim();
+     
+          if(logPw==""){
+          alert("비밀번호를 입력 하세요.");
+          return;
+     }
+     }
+
+
+
+     //login Elseif 끝
+
+
+     //nonmemberElseif 시작
+
+     function fnIqBtn(){
+          let logNfo= document.querySelector("#nfo").value;
+          logNfo=logNfo.trim();
+
+          if(logNfo==""){
+          alert("주문번호를 입력해주세요");
+          return;
+     }
+
+          let logAdd= document.querySelector("#address").value;
+          logAdd=logAdd.trim();
+     
+          if(logAdd==""){
+          alert("연락처를 입력해주세요");
+          return;
+     }
+     }
+
+
+     //nonmemberElseif 끝
+
+
+
+     
      //join Elseif 시작
 
 
@@ -172,6 +309,12 @@ $(function(){
                     document.querySelector("#idMsg").innerText=idMsg;
                     document.querySelector("#id").focus();
                     return;
+               } else{
+                    document.querySelector("#idMsg").innerText="";
+                    $("#joinID>#idArea").css({
+                         "padding-bottom":"5px",
+                         "border-color":"#ccc"
+                    });
                }
 
                let domPw= document.querySelector("#pw").value;
@@ -179,7 +322,8 @@ $(function(){
                document.querySelector("#pw").value=domPw;
                $("#joinID>#pwArea").css({
                     "padding-bottom":"5px",
-                    "border-color":"#f00"
+                    "border-color":"#f00",
+                    "border-top":"1px solid #f00"
                });
 
                if(domPw==""){
@@ -187,6 +331,13 @@ $(function(){
                     document.querySelector("#pwMsg").innerText=pwMsg;
                     document.querySelector("#pw").focus();
                     return;
+               }else{
+                    document.querySelector("#pwMsg").innerText="";
+                    $("#joinID>#pwArea").css({
+                         "padding-bottom":"5px",
+                         "border-color":"#ccc",
+                         "border-top":"none"
+                    });
                }
 
                let domPwRe= document.querySelector("#pwRe").value;
@@ -194,7 +345,8 @@ $(function(){
                document.querySelector("#pwRe").value=domPwRe;
                $("#joinID>#pwReArea").css({
                     "padding-bottom":"5px",
-                    "border-color":"#f00"
+                    "border-color":"#f00",
+                    "border-top":"1px solid #f00"
                });
 
                if(domPwRe==""){
@@ -202,6 +354,13 @@ $(function(){
                     document.querySelector("#pwReMsg").innerText=pwReMsg;
                     document.querySelector("#pwRe").focus();
                     return;
+               }else{
+                    document.querySelector("#pwReMsg").innerText="";
+                    $("#joinID>#pwReArea").css({
+                         "padding-bottom":"5px",
+                         "border-color":"#ccc",
+                         "border-top":"none"
+                    });
                }
 
                let domuEmail= document.querySelector("#uEmail").value;
@@ -217,6 +376,12 @@ $(function(){
                     document.querySelector("#uEmailMsg").innerText=uEmailMsg;
                     document.querySelector("#uEmail").focus();
                     return;
+               }else{
+                    document.querySelector("#uEmailMsg").innerText="";
+                    $("#email>#uEmailArea").css({
+                         "padding-bottom":"5px",
+                         "border-color":"#ccc"
+                    });
                }
 
                let domuName= document.querySelector("#uName").value;
@@ -233,49 +398,32 @@ $(function(){
                     document.querySelector("#uNameMsg").innerText=uNameMsg;
                     document.querySelector("#uName").focus();
                     return;
+               }else{
+                    document.querySelector("#uNameMsg").innerText="";
+                    $("#nickname>#uNameArea").css({
+                         "padding-bottom":"5px",
+                         "border-color":"#ccc"
+                    });
                }
 
 
-
-               document.querySelector("#idMsg").innerText = "";
-               // let domId=document.getElementById("id");
-               // id=domId.value;
-               // id=id.trim();
-          
-
-          // let domPw=document.getElementById("pw");
-          // pw=domPw.value;
-          // pw=pw.trim();
-
-          // let domPwRe=document.getElementById("pwRe");
-          // pwRe=domPwRe.value;
-          // pwRe=pwRe.trim();
-          
-          // let domUemail=document.getElementById("uEmail");
-          // uEmail=domUemail.value;
-          // uEmail=uEmail.trim();
-
-          // let domUname=document.getElementById("uName");
-          // uName=domUname.value;
-          // uName=uName.trim();
-
-
-
-
-          // if(id==""){
-          //      domId.focus();
-          // } else if(pw==""){
-          //      domPw.focus();
-          // } else if(pwRe==""){
-          //      domPwRe.focus();
-          // } else if(uEmail==""){
-          //      domUemail.focus();
-          // } else if(uName==""){
-          //      domUname.focus();
-          // }
-
      }
 
-
-
      //join Elseif 끝
+
+
+     //goods 시작
+
+     $(function(){
+
+          $("#goodsMainImg li").mouseover(function(){
+           let mainImg= $(this).children().attr("src");
+           $("#goodsSlide img").attr("src",mainImg);
+          });
+
+
+
+     });
+
+     
+     //goods 끝
